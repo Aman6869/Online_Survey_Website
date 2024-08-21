@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="medical.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Covid vaccination survey form
+            </h1>
+            <p id="description">
+                Thank you for taking the time to help us to improve the plateform
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            
+
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            
+
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            
+            <div class="form-group">
+                <p id="quest">Which vaccine did you take ?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select the vaccine</option>
+                    <option value="Covaxin">Covaxin</option>
+                    <option value="Covishield">Covishield</option>
+                    <option value="Sputnik">Sputnik</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p id="quest">How you come to know about our internet services survey ?</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >TV Ads
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="social-media"
+                    class="inputRadio"
+                    > Social Media
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="newspaper"
+                    class="inputRadio"
+                    > Newspaper
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="other"
+                    class="inputRadio"
+                    > Other
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <p id="quest">Did you had any of these symptoms before getting vaccinated ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Problem in breathing"> Problem in breathing
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Headaache"> Headache 
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Unable to taste anything"> Unable to taste anything
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Loss of appetite"> Loss of appetite
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other symptoms"> Other symptoms
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <p id="quest">Did you face any issues after getting vaccinated ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Yes"> Yes
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="No"> No
+                </label>
+            </div>
+			
+			<div class="form-group">
+                <p id="quest">Did you face any of these health issues after getting vaccinated ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Rise of body temperature"> Rise of body temperature
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Weakness"> Weakness 
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Sleepiness">sleepiness
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Headache"> Headache
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Loss of appetite"> Loss of appetite
+                </label>
+            </div>
+            
+			<div class="form-group">
+                <p id="quest">Are you still following Covid prevention guidelines after Vaccination ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Yes, i still follow all the guidelines"> Yes, i still follow all the guidelines
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="I only wear a mask when necessary"> I only wear a mask when necessary
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="No, I go to crowded places without wearing a mask but do use sanitizer">  No, I go to crowded places without wearing a mask but do use sanitizer 
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="yes, I do wear a mask but stopped using a sanitizer"> yes, I do wear a mask but stopped using a sanitizer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="No, I have completely discarded the use of masks and sanitizer"> No, I have completely discarded the use of masks and sanitizer
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="quest">Give us your feedback regarding any issues you faced after the vaccinated no mentioned above</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
